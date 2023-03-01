@@ -1,0 +1,218 @@
+.website {
+	max-width: 1000px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.social-media {
+    background-image: url(../images/nav.png);
+	display: flex;
+	justify-content: flex-end;
+	padding: 5px;
+}
+.social-media li:first-child{
+	border-right: 1px solid #8d8c8c;
+	margin: 0px 5px 0px 0px;
+}
+.social-media a{
+	margin-right: 5px;
+}
+a{
+    text-decoration: none;
+}
+
+.twitter{
+	color: #00ADEF;
+}
+.social-media img{
+	margin-right: 3px;
+}
+.header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.header img{
+	margin-left: 20px;
+}
+.menu{
+	display: flex;
+	align-items: center;
+}
+.menu a{
+	display: block;
+	width: 100px;
+	color: #16CD9F;
+	text-align: center;
+	padding: 5px;
+}
+.menu a:hover,.social-media a:hover{
+	color: #f5f5f5;
+	background-color: #8B7E74;
+}
+.banner{
+    background-image: url(../images/banner.png);
+	width: 1000px;
+	height: 246px;
+	position: relative;
+	margin-top: 10px;
+}
+h1{
+	font-size: 30px;
+	color: #f5f5f5;
+	padding-top: 75px;
+	padding-left: 10px;
+	line-height: 1.5;
+}
+.text-box{
+	height: 150px;
+	background: rgba(0,0,0,0.2);
+	position: absolute;
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto
+}
+.content{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+h3{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 15px;
+}
+.content img{
+	display: block;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.topie{
+	width: 330px;
+	box-shadow: 0px 2px 3px gray;
+	margin-right: 5px;
+}
+.topie p{
+	padding: 20px;
+}
+
+.content-jquery{
+	padding: 20px;
+	line-height: 1.2;
+}
+
+h2{
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+.table{
+	margin: auto;
+}
+.tr-color{
+	background: #f3ebeb;
+}
+.tr-border{
+	border-top: 0.5px solid #777676;
+}
+.tr-border-button{
+	border-bottom: 0.5px solid #777676;
+}
+
+.th{
+	font-family: Microsoft JhengHei;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 100px;
+}
+.td{
+	font-family: Microsoft JhengHei;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+
+.text-color{
+	color: #16CD9F;
+}
+.form {
+	background-image: url(../images/from-bg.png);
+	margin-top: 50px;
+	padding-bottom: 10px;
+	position: relative;
+}
+.form h4{
+	font-size: 24px;
+	color: #FFF;
+	text-align: center;
+	padding-top: 20px;
+	line-height: 1.5;
+}
+textarea{
+	resize: none;
+}
+.content-box{
+	width: 450px;
+	height: 250px;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+.data-source{
+	position: absolute;
+    top: 0;
+	right: 0;
+	margin-right: 20px;
+	margin-top: 120px;
+}
+.data-source li{
+	color: #FFF;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.data-source .input{
+	width: 450px;
+	border-radius: 3px;
+	outline: none;
+	border: none;
+	padding: 10px;
+	margin-top: 5px;
+}
+.button{
+	width: 70px;
+	height: 30px;
+	background: #16CD9F;
+	color: #FFF;
+	margin-left: 420px;
+	border-radius: 3px;
+	outline: none;
+	border: none;
+}
+.footer{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.footer img{
+	padding-left: 20px;
+}
+.footer p{
+	padding-right: 20px;
+	line-height: 1.5;
+}
+.footer a:hover{
+	background: #00ADEF;
+	color: #FFF;
+}
+.footer a:mail{
+	background: #00ADEF;
+	color: #FFF;
+}
