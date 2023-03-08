@@ -1,0 +1,250 @@
+/*共用畫面*/
+
+.bg{
+    max-width: 1028px;
+    height: 670px;
+    background: $maincolor;
+    margin: 0px auto;
+}
+.people-img{
+    width: 386px;
+    height: 386px;
+    background-image: url(../images/people.svg);
+    margin-left: 115px;
+    margin-top: 20px;
+}
+
+/*登入頁*/
+.login-box{
+    display: flex;
+    margin-left: 150px;
+    padding-top: 90px;
+    p{
+        font-weight: 700;
+        font-size: 32px;
+        font-family: $font-family;
+        line-height: 50px;
+    }
+}
+
+.login-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.login-form{
+    margin-left: 100px;
+    h1{
+        font-size: $font-l;
+        font-family:$font-family;
+        color: #B73E3E;
+        text-align: center;
+        font-weight: 700;
+        margin: 20px 0px 24px 0px;
+    }
+    input{
+        display: block;
+    }
+    .signln-account,.signln-pwd{
+        width: 300px;
+        height: 47px;
+        border-radius: 10px;
+        border: none;
+        margin: 5px 0px;
+        padding-left: 16px;
+        font-size: $font-m;
+    }
+    span{
+        color: #d42d07;
+        display: block;
+        margin-bottom: 20px;
+        font-family:$font-family;
+    }
+    .signln-btn{
+        width: 128px;
+        height: 47px;
+        background-color: #333333;
+        color: #F5f5f5;
+        border-radius: 10px;
+        font-size: $font-m;
+        margin: 24px auto;
+    }
+    a{
+        width: 100px;
+        display: block;
+        margin: auto;
+        padding: 5px;
+        text-decoration: none;
+        font-size: $font-m;
+        font-family:$font-family;
+        text-align: center;
+        color: $text-color;
+    }
+    .signln-btn:hover,a:hover{
+        background-color: #CE7777;
+        color: #F5f5f5;
+    }
+}
+
+/*註冊頁*/
+.register{
+    h2{
+        font-size: $font-l;
+        font-weight: 700;
+        margin-left: 600px;
+        padding-top: 81px;
+    }
+    .register-box{
+        display: flex;
+        margin-left: 150px;
+        p{
+            font-weight: 700;
+            font-size: 32px;
+            font-family: $font-family;
+        }
+    }
+    .register-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+.register-form{
+    margin-left: 100px;
+    input{
+        display: block;
+    }
+    .signUp-account,.nickname,.signUp-pwd,.again-pwd{
+        width: 300px;
+        height: 47px;
+        border-radius: 10px;
+        border: none;
+        padding-left: 16px;
+        font-size: $font-m;
+        margin: 5px 0px 20px 0px;
+    }
+    a{
+        width: 100px;
+        display: block;
+        margin: auto;
+        padding: 5px;
+        text-decoration: none;
+        font-size: $font-m;
+        font-family:$font-family;
+        text-align: center;
+        color: $text-color;
+    }
+    .signUp-btn{
+        width: 128px;
+        height: 47px;
+        background: #333333;
+        color: #F5f5f5;
+        border-radius: 10px;
+        font-size: $font-m;
+        margin: 12px auto;
+    }
+    .signUp-btn:hover,a:hover{
+        background-color: #4C6793;
+        color: #F5f5f5;
+    }
+}
+
+
+/*TODO內頁*/
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    .header-box{
+        display: flex;
+        padding: 18px 0px 0px 35px;
+        p{
+            font-weight: 700;
+            font-size: 24px;
+            font-family: $font-family;
+            line-height: 38px;
+        }
+    }
+}
+.header-list{
+    display: flex;
+    margin-left: 500px;
+    font-weight: 700;
+    font-size: $font-m;
+    line-height: 23px;
+    h3{ 
+        margin: 20px 24px 0px 0px;
+    }
+    p{
+        margin: 20px 30px 0px 0px;
+    }
+}
+.add-todo{
+    margin: 90px 30px 0px 225px;
+    .add{
+        width: 500px;
+        height: 47px;
+        border-radius: 10px;
+        border: none;
+        font-size: $font-m;
+    }
+    .add-btn{
+        width: 75px;
+        height: 35px;
+        background-color: #473C33;
+        color: #F5f5f5;
+        font-size: $font-m;
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+    .add-btn:hover{
+        background-color: #CE7777;
+    }
+}
+.todo{
+    position: relative;
+}
+.list-card{
+    width: 400px;
+    height: 400px;
+    background-color: #F5f5f5;
+    border: 1px solid #908f8f;
+    position: absolute;
+    top: 250px;
+    left: 270px;
+    border-radius: 10px;
+}
+.tag{
+    display: flex;
+    border-bottom: 2px solid #9e9b9b;
+    li{
+        width: 33.3333%;
+        text-align: center;
+        padding: 10px;
+    }
+}
+.todo-list{
+    li{
+        width: 350px;
+        height: 36px;
+        margin: 20px;
+        border-bottom: 1px solid gray;
+    }
+}
+.list-footer{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px;
+    a{
+        width: 150px;
+        display: block;
+        text-decoration: none;
+        color: $text-color;
+    }
+}
+/*讓其餘頁面隱藏*/
+
+.js-view{
+    display: none;
+}

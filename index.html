@@ -4,126 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>六角學院</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <title>待辦事項</title>
+    <script src="https://kit.fontawesome.com/029a4e4349.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/all.css">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6825DMNC47"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6825DMNC47');
+</script>
 <body>
-    <div class="website">
-        <ul class="social-media">
-            <li><a href="#"><img src="images/fb.png" alt="臉書logo">粉絲團</a></li>
-            <li><a href="#" class="twitter"><img src="images/twitter.png" alt="推特logo">追隨我們</a></li>
-        </ul>
-        <header class="header">
-            <img src="images/logo.png" alt="六角學院logo">
-            <ul class="menu">
-                <li><a href="https://www.hexschool.com/qa/how-to.html">首頁</a></li>
-                <li><a href="https://www.hexschool.com/qa/how-to.html">產品介紹</a></li>
-                <li><a href="#">聯絡我們</a></li>
-            </ul>
-        </header>
-        <div class="banner">
-            <h1>六角學院<br>讓您奠定良好的前端基礎</h1>
-            <div class="text-box"></div>
+    <div class="login bg" id="login-section">
+        <div class="login-box">
+            <img src="images/Group.svg" alt="打v圖示">
+            <p>ONLINE TODO LIST</p>
         </div>
-        <ul class="content">
-            <li class="topie">
-            <img src="images/feature-html5.png" alt="Html logo ">
-            <h3>Html 5 基礎教學</h3>
-            <p>課程結束後，我們會提供給你一個完整的網頁設計稿，當你實作出網頁來後再轉交六角學院的講師們，我們會為您進行程式碼審視，以確保你吸收的網頁排版觀念是正確的。</p>
-            </li>
-            <li class="topie">
-                <img src="images/feature-rwd.png" alt="Rwd logo ">
-                <h3>響應式網站設計</h3>
-                <p>課程結束後，我們會提供給你一個完整的網頁設計稿，當你實作出網頁來後再轉交六角學院的講師們，我們會為您進行程式碼審視，以確保你吸收的網頁排版觀念是正確的。</p>
-            </li>
-            <li class="topie">
-                <img src="images/feature-jquery.png" alt="jquery logo ">
-                <h3>jQuery 實戰教學</h3>
-                <ul class="content-jquery">
-                    <li>本課程有以下特色</li>
-                    <li>·JavaScript的起源</li>
-                    <li>·JavaScript</li>
-                    <li>·腳本的基本結構</li>
-                    <li>·腳本的基本結構</li>
+        <div class="login-content">
+            <div class="people-img"></div>
+            <div class="login-form">
+                <h1>提升工作效率，增加耍廢時間！</h1>
+                <form action="" method="post">
+                    <label for= "email">帳號</label>
+                    <input id="email"  type= "text" placeholder="請輸入電子郵件" name= "email" class="signln-account">
+                    <span>此欄不可空白</span><br>
+                    <label for= "password">密碼</label>
+                    <input id="password"  type= "password" name= "password" class="signln-pwd">
+                    <input type="submit" value="登入" class="signln-btn">
+                    <a href="#register-section">註冊帳號</a>
+                    <!-- 同頁面跳轉 -->
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="register bg" id="register-section">
+        <h2>註冊帳號</h2>
+        <div class="register-box">
+            <img src="images/Group.svg" alt="打v圖示">
+            <p>ONLINE TODO LIST</p>
+        </div>
+        <div class="register-content">
+            <div class="people-img"></div>
+            <div class="register-form">
+                <form>
+                    <label for= "register-email">帳號</label>
+                    <input id="register-email"  type= "text" placeholder="請輸入電子郵件" name= "email" class="signUp-account" >
+                    <label for= "nickname">您的暱稱</label>
+                    <input id="nickname"  type= "text" placeholder="請輸入您的暱稱" name= "email" class="nickname" >
+                    <label for= "register-pwd">密碼</label>
+                    <input id="register-pwd"  type= "password" placeholder="請輸入密碼" class="signUp-pwd">
+                    <label for="password2">再次輸入密碼</label>
+                    <input type="password" id="password2" placeholder="請再次輸入密碼" class="again-pwd">
+                    <input type="submit" value="註冊帳號" class="signUp-btn">
+                    <a href="#login-section">登入</a>
+                    <!-- 同頁面跳轉 -->
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="todo bg">
+        <header class="header">
+            <div class="header-box">
+                <img src="images/Group.svg" alt="打v圖示">
+                <p>ONLINE TODO LIST</p>
+            </div>
+            <div class="header-list">
+                <h3>丸娜的待辦</h3>
+                <!-- 要帶入登入者姓名，用js串 -->
+                <p>登出</p>
+            </div>
+        </header>
+        <div class="add-todo">
+            <input type= "text" placeholder="請輸入待辦事項" class="add" >
+            <input type="button" class="add-btn" value="新增">
+        </div>
+        <div class="list-card">
+            <ul class="tag">
+                <li><input type="button" value="全部"></li>
+                <li><input type="button" value="已完成"></li>
+                <li><input type="button" value="待完成"></li>
+            </ul>
+            <div class="list-content">
+                <ul class="todo-list">
+                    <li></li>              
+                    <li></li>
+                    <li></li>
                 </ul>
-            </li>
-        </ul>
-        <h2>線上及實體課程的體驗差異</h2>
-        <table class="table">
-            <tr class="tr-color tr-border">
-               <th class="th">項目</th>
-               <th class="th">Hex School線上課程</th>
-               <th class="th">一般線上課程</th>
-               <th class="th">實體課程</th>
-            </tr>
-            <tr class="tr-border">
-               <td class="td">費用</td>
-               <td class="text-color td">較低</td>
-               <td class="text-color td">較低</td>
-               <td class="td">較高</td>
-            </tr>
-            <tr class="tr-border">
-                <td class="td">學習效果</td>
-                <td class="td">一般</td>
-                <td class="text-color td">較低</td>
-                <td class="text-color td">很好</td>
-             </tr>
-             <tr class="tr-border">
-                <td class="td">Code review</td>
-                <td class="text-color td">有</td>
-                <td class="td">無</td>
-                <td class="td">不一定</td>
-            </tr>
-            <tr class="tr-border">
-                <td class="td">課程更新進度</td>
-                <td class="text-color td">普通</td>
-                <td class="text-color td">普通</td>
-                <td class="td">較慢</td>
-            </tr>
-            <tr class="tr-border">
-                <td class="td">多次複習</td>
-                <td class="text-color td">可</td>
-                <td class="td">可</td>
-                <td class="td">不可</td>
-            </tr>
-            <tr class="tr-border tr-border-button">
-                <td class="td">字幕</td>
-                <td class="text-color td">有</td>
-                <td class="td">不一定</td>
-                <td class="td">板書</td>
-            </tr>
-            </table>
-        <form action= "index.html">
-            <div class="form">
-                <h4>對我們課程有興趣嗎?<br>歡迎留下您的資料</h4>
-                <textarea name= "content" class="content-box"></textarea>
-                <ul class="data-source"> 
-                    <li>
-                        <label for="person">姓名</label>
-                        <br>
-                        <input id="person" type="text" name="person" placeholder="六角講師" class="input">
-                    </li>
-                    <li>
-                        <label for="tel">電話</label>
-                        <br>
-                        <input id="tel" type="tel" name="tel" placeholder="0912345678" class="input">
-                    </li>
-                    <li>
-                        <label for="mail">電子郵件</label>
-                        <br>
-                        <input id="mail" type="mail" name="mail" placeholder="hexschoo@gmali.com" class="input">
-                    </li>
-                </ul>
-                <input type="submit" value="送出" class="button">
-           </div>
-        </form>
-       <footer class="footer" >
-        <img src="images/footer.png" alt="六角學院 logo ">
-        <p>聯絡我們：<a href="mailto:hexschoo@gmali.com">hexschoo@gmali.com</a>
-        <br>
-        電話：<a href="tel:+886-2345345">099912346</a>
-       </footer>
-</div>
+            </div>
+            <div class="list-footer">
+                <p>？個待完成項目</p>
+                <!-- 數字要用累積的 -->
+                <a href="#">清除已完成項目</a>
+            </div>
+        </div>
+        <script src="js/all.js"></script>
 </body>
 </html>

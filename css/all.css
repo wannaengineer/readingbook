@@ -1,218 +1,319 @@
-.website {
-	max-width: 1000px;
-	margin: 0 auto;
-	margin-top: 10px;
-}
-.social-media {
-    background-image: url(../images/nav.png);
-	display: flex;
-	justify-content: flex-end;
-	padding: 5px;
-}
-.social-media li:first-child{
-	border-right: 1px solid #8d8c8c;
-	margin: 0px 5px 0px 0px;
-}
-.social-media a{
-	margin-right: 5px;
-}
-a{
-    text-decoration: none;
-}
-
-.twitter{
-	color: #00ADEF;
-}
-.social-media img{
-	margin-right: 3px;
-}
-.header{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-.header img{
-	margin-left: 20px;
-}
-.menu{
-	display: flex;
-	align-items: center;
-}
-.menu a{
-	display: block;
-	width: 100px;
-	color: #16CD9F;
-	text-align: center;
-	padding: 5px;
-}
-.menu a:hover,.social-media a:hover{
-	color: #f5f5f5;
-	background-color: #8B7E74;
-}
-.banner{
-    background-image: url(../images/banner.png);
-	width: 1000px;
-	height: 246px;
-	position: relative;
-	margin-top: 10px;
-}
-h1{
-	font-size: 30px;
-	color: #f5f5f5;
-	padding-top: 75px;
-	padding-left: 10px;
-	line-height: 1.5;
-}
-.text-box{
-	height: 150px;
-	background: rgba(0,0,0,0.2);
-	position: absolute;
-	top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto
-}
-.content{
-	display: flex;
-	justify-content: space-between;
-	margin-top: 50px;
-}
-h3{
-	font-size: 20px;
-	font-weight: bold;
-	text-align: center;
-	margin-top: 15px;
-}
-.content img{
-	display: block;
-	margin: auto;
-	margin-top: 30px;
-	margin-bottom: 10px;
-}
-.topie{
-	width: 330px;
-	box-shadow: 0px 2px 3px gray;
-	margin-right: 5px;
-}
-.topie p{
-	padding: 20px;
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-.content-jquery{
-	padding: 20px;
-	line-height: 1.2;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
 }
 
-h2{
-	font-size: 30px;
-	font-weight: bold;
-	text-align: center;
-	margin-top: 50px;
-	margin-bottom: 20px;
-}
-.table{
-	margin: auto;
-}
-.tr-color{
-	background: #f3ebeb;
-}
-.tr-border{
-	border-top: 0.5px solid #777676;
-}
-.tr-border-button{
-	border-bottom: 0.5px solid #777676;
+body {
+  line-height: 1;
 }
 
-.th{
-	font-family: Microsoft JhengHei;
-	font-weight: bold;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 20px;
-	padding-right: 100px;
-}
-.td{
-	font-family: Microsoft JhengHei;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 20px;
+ol, ul {
+  list-style: none;
 }
 
-.text-color{
-	color: #16CD9F;
-}
-.form {
-	background-image: url(../images/from-bg.png);
-	margin-top: 50px;
-	padding-bottom: 10px;
-	position: relative;
-}
-.form h4{
-	font-size: 24px;
-	color: #FFF;
-	text-align: center;
-	padding-top: 20px;
-	line-height: 1.5;
-}
-textarea{
-	resize: none;
-}
-.content-box{
-	width: 450px;
-	height: 250px;
-	margin-left: 30px;
-	margin-top: 30px;
-}
-.data-source{
-	position: absolute;
-    top: 0;
-	right: 0;
-	margin-right: 20px;
-	margin-top: 120px;
-}
-.data-source li{
-	color: #FFF;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
-.data-source .input{
-	width: 450px;
-	border-radius: 3px;
-	outline: none;
-	border: none;
-	padding: 10px;
-	margin-top: 5px;
-}
-.button{
-	width: 70px;
-	height: 30px;
-	background: #16CD9F;
-	color: #FFF;
-	margin-left: 420px;
-	border-radius: 3px;
-	outline: none;
-	border: none;
-}
-.footer{
-	display: flex;
-	justify-content: space-between;
-	margin-top: 30px;
-	margin-bottom: 30px;
+blockquote, q {
+  quotes: none;
 }
 
-.footer img{
-	padding-left: 20px;
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
 }
-.footer p{
-	padding-right: 20px;
-	line-height: 1.5;
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-.footer a:hover{
-	background: #00ADEF;
-	color: #FFF;
+
+/*防止圖片破版*/
+img {
+  max-width: 100%;
+  height: auto;
 }
-.footer a:mail{
-	background: #00ADEF;
-	color: #FFF;
+
+/*全域 border box*/
+*, *::before, *::after {
+  box-sizing: border-box;
 }
+
+/*共用畫面*/
+.bg {
+  max-width: 1028px;
+  height: 670px;
+  background: #E9E5D6;
+  margin: 0px auto;
+}
+
+.people-img {
+  width: 386px;
+  height: 386px;
+  background-image: url(../images/people.svg);
+  margin-left: 115px;
+  margin-top: 20px;
+}
+
+/*登入頁*/
+.login-box {
+  display: flex;
+  margin-left: 150px;
+  padding-top: 90px;
+}
+.login-box p {
+  font-weight: 700;
+  font-size: 32px;
+  font-family: monospace;
+  line-height: 50px;
+}
+
+.login-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.login-form {
+  margin-left: 100px;
+}
+.login-form h1 {
+  font-size: 24px;
+  font-family: monospace;
+  color: #B73E3E;
+  text-align: center;
+  font-weight: 700;
+  margin: 20px 0px 24px 0px;
+}
+.login-form input {
+  display: block;
+}
+.login-form .signln-account, .login-form .signln-pwd {
+  width: 300px;
+  height: 47px;
+  border-radius: 10px;
+  border: none;
+  margin: 5px 0px;
+  padding-left: 16px;
+  font-size: 16px;
+}
+.login-form span {
+  color: #d42d07;
+  display: block;
+  margin-bottom: 20px;
+  font-family: monospace;
+}
+.login-form .signln-btn {
+  width: 128px;
+  height: 47px;
+  background-color: #333333;
+  color: #F5f5f5;
+  border-radius: 10px;
+  font-size: 16px;
+  margin: 24px auto;
+}
+.login-form a {
+  width: 100px;
+  display: block;
+  margin: auto;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: monospace;
+  text-align: center;
+  color: #100F0F;
+}
+.login-form .signln-btn:hover, .login-form a:hover {
+  background-color: #CE7777;
+  color: #F5f5f5;
+}
+
+/*註冊頁*/
+.register h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 600px;
+  padding-top: 81px;
+}
+.register .register-box {
+  display: flex;
+  margin-left: 150px;
+}
+.register .register-box p {
+  font-weight: 700;
+  font-size: 32px;
+  font-family: monospace;
+}
+.register .register-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.register-form {
+  margin-left: 100px;
+}
+.register-form input {
+  display: block;
+}
+.register-form .signUp-account, .register-form .nickname, .register-form .signUp-pwd, .register-form .again-pwd {
+  width: 300px;
+  height: 47px;
+  border-radius: 10px;
+  border: none;
+  padding-left: 16px;
+  font-size: 16px;
+  margin: 5px 0px 20px 0px;
+}
+.register-form a {
+  width: 100px;
+  display: block;
+  margin: auto;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: monospace;
+  text-align: center;
+  color: #100F0F;
+}
+.register-form .signUp-btn {
+  width: 128px;
+  height: 47px;
+  background: #333333;
+  color: #F5f5f5;
+  border-radius: 10px;
+  font-size: 16px;
+  margin: 12px auto;
+}
+.register-form .signUp-btn:hover, .register-form a:hover {
+  background-color: #4C6793;
+  color: #F5f5f5;
+}
+
+/*TODO內頁*/
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.header .header-box {
+  display: flex;
+  padding: 18px 0px 0px 35px;
+}
+.header .header-box p {
+  font-weight: 700;
+  font-size: 24px;
+  font-family: monospace;
+  line-height: 38px;
+}
+
+.header-list {
+  display: flex;
+  margin-left: 500px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+}
+.header-list h3 {
+  margin: 20px 24px 0px 0px;
+}
+.header-list p {
+  margin: 20px 30px 0px 0px;
+}
+
+.add-todo {
+  margin: 90px 30px 0px 225px;
+}
+.add-todo .add {
+  width: 500px;
+  height: 47px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+.add-todo .add-btn {
+  width: 75px;
+  height: 35px;
+  background-color: #473C33;
+  color: #F5f5f5;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.add-todo .add-btn:hover {
+  background-color: #CE7777;
+}
+
+.todo {
+  position: relative;
+}
+
+.list-card {
+  width: 400px;
+  height: 400px;
+  background-color: #F5f5f5;
+  border: 1px solid #908f8f;
+  position: absolute;
+  top: 250px;
+  left: 270px;
+  border-radius: 10px;
+}
+
+.tag {
+  display: flex;
+  border-bottom: 2px solid #9e9b9b;
+}
+.tag li {
+  width: 33.3333%;
+  text-align: center;
+  padding: 10px;
+}
+
+.todo-list li {
+  width: 350px;
+  height: 36px;
+  margin: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.list-footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0px;
+}
+.list-footer a {
+  width: 150px;
+  display: block;
+  text-decoration: none;
+  color: #100F0F;
+}
+
+/*讓其餘頁面隱藏*/
+.js-view {
+  display: none;
+}/*# sourceMappingURL=all.css.map */
